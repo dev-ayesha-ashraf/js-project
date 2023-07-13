@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>click</h3>
+    <a href="#" onclick="showMsg()">CLICK ME</a>
+
+    <h3>Images</h3>
+    <div class="img">
+        <img src="./download (1).jpg" alt="" width="300px" onclick="sales()">
+        <img src="./download (2).jpg" alt="" width="300px" onclick="sales()">
+        <img src="./download.jpg" alt="" width="300px" onclick="sales()">
+    </div>
+
+    <h3>STUDENTS RECORD LIST</h3>
+<li>Azeem 10  <button onclick="deleteText(this)">DELETE</button></li>
+<li>Usman 10 <button onclick="deleteText(this)">DELETE</button></li>
+<li>Ali 9 <button onclick="deleteText(this)">DELETE</button></li>
+<li>john 0 <button onclick="deleteText(this)">DELETE</button></li>
+<li>Doe 5 <button onclick="deleteText(this)">DELETE</button></li>
+<li>Mark 6 <button onclick="deleteText(this)">DELETE</button></li>
+<li>James 7 <button onclick="deleteText(this)">DELETE</button></li>
+<li>Ahmed 2 <button onclick="deleteText(this)">DELETE</button></li>
+<li>Hassan 3 <button onclick="deleteText(this)">DELETE</button></li>
+<li>Naveed 4 <button onclick="deleteText(this)">DELETE</button></li>
+
+<h3>Mouse Images</h3>
+<img src="./download.jpg" onmouseover="changePicture()" onmouseout="resetPicture()" id = "image"> 
+
+<h3>Counter App</h3>
+<div class="container">
+    <div class="card-body">
+        <h1 id="title">0</h1>
+        <div class="card-btn">
+           <button id="decrement" class="btn">-</button>
+           <button id="reset" class="btn">reset<i class="bi bi-arrow-clockwise"></i></button>
+           <button id="increment" class="btn">+</button>
+
+        </div>
+    </div>
+</div>
+    <script src="./app.js"></script>
+
+
+</body>
+
+</html>
